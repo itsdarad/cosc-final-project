@@ -1,15 +1,28 @@
 class Laptop:
-  def __init__(self, processor,):
-    self.__square_feet = sf
+  def __init__(self, pro, ram, prices):
+    self.__processor = pro
+    self.__ram = ram
+    self.__prices = prices
 
-  def set_square_feet(self, sf):
-    self.__square_feet = sf
+  def set_processor(self, pro):
+    self.__processor = pro
 
-  def set_story(self, st):
-    self.__story = st
+  def set_ram(self, ram):
+    self.__ram = ram
 
-  def get_square_feet(self):
-    return self.__square_feet
+  def set_prices(self, prices):
+    self.__prices = prices
 
-  def get_story(self):
-    return self.__story
+  def get_processor(self):
+    return self.__processor
+
+  def get_ram(self):
+    return self.__ram
+
+  def get_prices(self):
+    return self.__prices
+
+class Dell (Laptop):
+  def __init__(self, pro, ram, prices):
+    Dell.__init__(self, pro, ram, prices)
+    
