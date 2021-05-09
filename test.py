@@ -19,6 +19,9 @@ class Laptop:
   def set_standard_laptopcase(self, case):
     self.__standard_laptopcase = case
 
+  def set_standard_sdcard(self, sdcard):
+    self.__standard_sdcard = sdcard
+
   def get_processor(self):
     return self.__processor
 
@@ -27,6 +30,15 @@ class Laptop:
 
   def get_price(self):
     return self.__price
+
+  def get_standard_mouse(self):
+    return self.__standard_mouse 
+
+  def get_standard_laptopcase(self):
+    return self.__standard_laptopcase
+
+  def get_standard_sdcard(self):
+   return self.__standard_sdcard 
 
 class Dell (Laptop):
   def __init__(self, pro, ram, price):
